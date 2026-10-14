@@ -31,6 +31,8 @@ def _(mo):
     A small, self-contained notebook using **synthetic data** (no real or
     confidential data). Adjust the controls to see how trend and seasonality
     change the series.
+
+    [← Back to the Notebook Gallery](https://radek-dev.github.io/notebook-gallery/)
     """)
     return
 
