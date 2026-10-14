@@ -19,3 +19,7 @@ uv run marimo edit sales_trends.py   # open a notebook
 Each notebook also declares its dependencies as inline script metadata, so it runs on its own with `uvx marimo edit --sandbox sales_trends.py`.
 
 Add packages with `uv add <package>`. After changing a notebook, refresh its saved static outputs with `uv run marimo export session <notebook>.py` and commit `__marimo__/`.
+
+All data in these notebooks is synthetic.
+
+Related: [notebook-gallery](https://github.com/radek-dev/notebook-gallery) · [streamlit-apps](https://github.com/radek-dev/streamlit-apps) · [quarto-notebooks](https://github.com/radek-dev/quarto-notebooks)
