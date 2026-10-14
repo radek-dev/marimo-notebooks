@@ -5,6 +5,7 @@ Public [marimo](https://marimo.io) notebooks, showcased in the [Notebook Gallery
 | Notebook | Description | Preview |
 | :-- | :-- | :-- |
 | `sales_trends.py` | Seasonal sales explorer on synthetic data | [Static](https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/sales_trends.py) · [Interactive](https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/sales_trends.py/wasm) |
+| `forecasting.py` | Baseline vs. trend + seasonality forecasts with a backtest, on synthetic data | [Static](https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/forecasting.py) · [Interactive](https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/forecasting.py/wasm) |
 
 ## Run locally
 
