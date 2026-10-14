@@ -9,8 +9,13 @@ Public [marimo](https://marimo.io) notebooks, showcased in the [Notebook Gallery
 
 ## Run locally
 
+Requires [uv](https://docs.astral.sh/uv/getting-started/installation/). The environment is locked in `uv.lock`.
+
 ```sh
-uvx marimo edit --sandbox sales_trends.py
+uv sync                              # create .venv from uv.lock
+uv run marimo edit sales_trends.py   # open a notebook
 ```
 
-Dependencies are declared in each notebook's inline script metadata.
+Each notebook also declares its dependencies as inline script metadata, so it runs on its own with `uvx marimo edit --sandbox sales_trends.py`.
+
+Add packages with `uv add <package>`. After changing a notebook, refresh its saved static outputs with `uv run marimo export session <notebook>.py` and commit `__marimo__/`.
