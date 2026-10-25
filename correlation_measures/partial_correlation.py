@@ -140,5 +140,28 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Baba, K., Shibata, R., and Sibuya, M. (2004),
+      [Partial Correlation and Conditional Correlation as Measures of
+      Conditional Independence](https://doi.org/10.1111/j.1467-842X.2004.00360.x).
+      Explores why partial correlation and conditional independence are
+      different concepts outside suitable distributional assumptions.
+    - **Book:** Venables, W. N., and Ripley, B. D. (2002),
+      [Modern Applied Statistics with S, 4th edition](https://doi.org/10.1007/978-0-387-21706-2).
+      Background on linear models, residuals, and multivariate analysis.
+    - **Accessible background:** James, G., Witten, D., Hastie, T.,
+      Tibshirani, R., and Taylor, J. (2023),
+      [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/).
+      The authors provide a free edition; start with the linear regression chapter.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

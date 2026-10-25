@@ -275,5 +275,24 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Spearman, C. (1904), [The Proof and Measurement
+      of Association between Two Things](https://doi.org/10.2307/1412159).
+      The foundational rank-correlation article.
+    - **Book:** Hollander, M., Wolfe, D. A., and Chicken, E.,
+      [Nonparametric Statistical Methods, 3rd edition](https://doi.org/10.1002/9781119196037).
+      A reference for rank-based methods and inference.
+    - **Practical reference:** [SciPy's Spearman correlation documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.spearmanr.html)
+      covers calculation, missing values, and inference limitations.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

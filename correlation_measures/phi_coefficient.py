@@ -132,5 +132,25 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Book:** Agresti, A. (2013),
+      [Categorical Data Analysis, 3rd edition: author resources](https://alanagresti.com/cda/cda.html).
+      Background on 2 x 2 tables, independence, and categorical association.
+    - **Research article:** Bergsma, W. (2013), [A bias-correction for
+      Cramer's and Tschuprow's association measures](https://doi.org/10.1016/j.jkss.2012.10.002).
+      Further reading on finite-sample bias in related unsigned measures;
+      for a 2 x 2 table, Cramer's V equals absolute phi.
+    - **Practical reference:** [SciPy's contingency association documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.contingency.association.html)
+      explains the relation between phi and larger-table association measures.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

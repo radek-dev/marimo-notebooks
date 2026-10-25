@@ -152,5 +152,25 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Kendall, M. G. (1938), [A New Measure of Rank
+      Correlation](https://doi.org/10.1093/biomet/30.1-2.81).
+      The original rank-concordance construction; use the modern reference
+      below for the tie-adjusted tau-b implemented here.
+    - **Book:** Hollander, M., Wolfe, D. A., and Chicken, E.,
+      [Nonparametric Statistical Methods, 3rd edition](https://doi.org/10.1002/9781119196037).
+      Further study of rank association and nonparametric inference.
+    - **Practical reference:** [SciPy's Kendall tau documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kendalltau.html)
+      distinguishes tau-b, tau-c, and the handling of ties.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

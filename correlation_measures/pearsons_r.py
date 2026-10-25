@@ -241,5 +241,24 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Pearson, K. (1895), [Note on regression and
+      inheritance in the case of two parents](https://doi.org/10.1098/rspl.1895.0041).
+      A historical source for regression and product-moment correlation.
+    - **Book:** Venables, W. N., and Ripley, B. D. (2002),
+      [Modern Applied Statistics with S, 4th edition](https://doi.org/10.1007/978-0-387-21706-2).
+      Applied background on multivariate analysis and linear models.
+    - **Practical reference:** [SciPy's Pearson correlation documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
+      explains the coefficient, inference assumptions, and constant-input cases.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

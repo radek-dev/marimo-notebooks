@@ -149,5 +149,24 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Tate, R. F. (1954), [Correlation Between a Discrete
+      and a Continuous Variable. Point-Biserial Correlation](https://doi.org/10.1214/aoms/1177728730).
+      A classic treatment of the binary-continuous setting.
+    - **Book:** Venables, W. N., and Ripley, B. D. (2002),
+      [Modern Applied Statistics with S, 4th edition](https://doi.org/10.1007/978-0-387-21706-2).
+      Background for comparing group means through linear models.
+    - **Practical reference:** [SciPy's point-biserial documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pointbiserialr.html)
+      gives the formula and its equivalence to Pearson correlation.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

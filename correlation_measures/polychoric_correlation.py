@@ -233,5 +233,23 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Olsson, U. (1979), [Maximum Likelihood Estimation
+      of the Polychoric Correlation Coefficient](https://doi.org/10.1007/BF02296207).
+      The central reference for likelihood-based estimation; read alongside
+      this notebook's distinction between two-step and joint estimation.
+    - **Book:** Agresti, A. (2010),
+      [Analysis of Ordinal Categorical Data, 2nd edition: author resources](https://alanagresti.com/ordinal/ord.html).
+      Background on ordinal models, ordering, and latent-variable interpretations.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

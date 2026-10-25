@@ -135,5 +135,24 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Bergsma, W. (2013), [A bias-correction for
+      Cramer's and Tschuprow's association measures](https://doi.org/10.1016/j.jkss.2012.10.002).
+      Explains the finite-sample bias mentioned above and a corrected estimator.
+    - **Book:** Agresti, A. (2013),
+      [Categorical Data Analysis, 3rd edition: author resources](https://alanagresti.com/cda/cda.html).
+      A broader treatment of contingency tables and categorical association.
+    - **Practical reference:** [SciPy's contingency association documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.contingency.association.html)
+      provides Cramer's V calculations and related measures.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

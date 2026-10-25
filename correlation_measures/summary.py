@@ -109,5 +109,55 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and reading guide
+
+    Each measure's notebook ends with references and a short explanation of
+    what to read. These links point to original research, books, and author
+    resources rather than unrelated gallery topics.
+
+    ### Research articles by measure
+
+    | Measure | Reading | Why it matters |
+    | :-- | :-- | :-- |
+    | Pearson | Pearson (1895), [Note on regression and inheritance in the case of two parents](https://doi.org/10.1098/rspl.1895.0041) | Historical regression and correlation foundation |
+    | Spearman | Spearman (1904), [The Proof and Measurement of Association between Two Things](https://doi.org/10.2307/1412159) | Rank correlation foundation |
+    | Kendall | Kendall (1938), [A New Measure of Rank Correlation](https://doi.org/10.1093/biomet/30.1-2.81) | Pairwise concordance foundation; modern tau-b adjusts for ties |
+    | Point-biserial | Tate (1954), [Correlation Between a Discrete and a Continuous Variable. Point-Biserial Correlation](https://doi.org/10.1214/aoms/1177728730) | Binary-continuous association |
+    | Phi / Cramer's V | Bergsma (2013), [A bias-correction for Cramer's and Tschuprow's association measures](https://doi.org/10.1016/j.jkss.2012.10.002) | Bias of related unsigned categorical measures, not the historical origin of signed phi |
+    | Polychoric | Olsson (1979), [Maximum Likelihood Estimation of the Polychoric Correlation Coefficient](https://doi.org/10.1007/BF02296207) | Likelihood-based latent correlation estimation |
+    | Partial | Baba, Shibata, and Sibuya (2004), [Partial Correlation and Conditional Correlation as Measures of Conditional Independence](https://doi.org/10.1111/j.1467-842X.2004.00360.x) | Distinguishing linear adjustment from conditional independence |
+    | Distance | Szekely, Rizzo, and Bakirov (2007), [Measuring and testing dependence by correlation of distances](https://doi.org/10.1214/009053607000000505) | General dependence and independence testing; [open-access version](https://arxiv.org/abs/0803.4101) |
+
+    ### Books
+
+    - **Linear and multivariate background:** Venables, W. N., and Ripley,
+      B. D. (2002), [Modern Applied Statistics with S, 4th edition](https://doi.org/10.1007/978-0-387-21706-2).
+      Useful alongside Pearson, point-biserial, and partial correlation.
+    - **Rank-based inference:** Hollander, M., Wolfe, D. A., and Chicken, E.,
+      [Nonparametric Statistical Methods, 3rd edition](https://doi.org/10.1002/9781119196037).
+      Useful alongside Spearman and Kendall.
+    - **Categorical association:** Agresti, A. (2013),
+      [Categorical Data Analysis, 3rd edition: author resources](https://alanagresti.com/cda/cda.html).
+      Useful alongside phi and Cramer's V.
+    - **Ordinal models:** Agresti, A. (2010),
+      [Analysis of Ordinal Categorical Data, 2nd edition: author resources](https://alanagresti.com/ordinal/ord.html).
+      Useful alongside polychoric correlation and threshold assumptions.
+    - **Accessible regression background:** James, G., Witten, D., Hastie, T.,
+      Tibshirani, R., and Taylor, J. (2023),
+      [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/).
+      The authors provide a free edition; use the regression chapter for
+      background on linear association and adjustment.
+
+    DOI links may require a subscription for full text. Author-resource pages
+    provide supporting material, not necessarily the complete book. For
+    distance correlation, start with the open-access research articles rather
+    than expecting a general introductory statistics book to cover it.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

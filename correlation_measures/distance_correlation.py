@@ -191,5 +191,30 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## References and further reading
+
+    - **Research article:** Szekely, G. J., Rizzo, M. L., and Bakirov, N. K.
+      (2007), [Measuring and testing dependence by correlation of
+      distances](https://doi.org/10.1214/009053607000000505).
+      Introduces distance covariance, distance correlation, and independence
+      testing. [Open-access author version](https://arxiv.org/abs/0803.4101).
+    - **Research article:** Szekely, G. J., and Rizzo, M. L. (2014),
+      [Partial distance correlation with methods for
+      dissimilarities](https://doi.org/10.1214/14-AOS1255).
+      Extends the framework and develops unbiased distance covariance^2
+      estimation. [Open-access author version](https://arxiv.org/abs/1310.2926).
+    - **Background book:** Hollander, M., Wolfe, D. A., and Chicken, E.,
+      [Nonparametric Statistical Methods, 3rd edition](https://doi.org/10.1002/9781119196037).
+      Background on nonparametric inference and permutation-based reasoning,
+      not a substitute for the distance-correlation articles above.
+
+    DOI links lead to publisher pages; full-text access may require a subscription.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()
