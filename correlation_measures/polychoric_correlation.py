@@ -36,6 +36,8 @@ def _(mo):
 
     This is a model-based estimate, not simply a correlation of category codes.
     All data is synthetic.
+    <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/summary.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Back to Correlation Measures Summary</a>
+
     [Back to the Notebook Gallery](https://radek-dev.github.io/notebook-gallery/)
 
     ## 1. Generate latent values and categorize them

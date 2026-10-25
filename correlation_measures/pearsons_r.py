@@ -41,6 +41,8 @@ def _(mo):
     We will explore synthetic data, calculate r step by step, and examine its
     limitations. No real or confidential data is used.
 
+    <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/summary.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Back to Correlation Measures Summary</a>
+
     [Back to the Notebook Gallery](https://radek-dev.github.io/notebook-gallery/)
 
     ## 1. Explore the relationship

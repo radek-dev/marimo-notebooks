@@ -30,6 +30,8 @@ def _(mo):
     negative association. The sign depends on which outcomes are coded 1.
 
     All counts are synthetic.
+    <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/summary.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Back to Correlation Measures Summary</a>
+
     [Back to the Notebook Gallery](https://radek-dev.github.io/notebook-gallery/)
 
     ## 1. Build a 2 x 2 table
