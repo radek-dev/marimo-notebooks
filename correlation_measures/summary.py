@@ -24,8 +24,10 @@ def _(mo):
     Nine ways to describe association, with interactive synthetic examples,
     formulas, worked calculations, and interpretation pitfalls.
 
-    **Each notebook link opens an interactive browser version in a new tab.**
-    No local Python installation is needed. To explore the collection locally:
+    **Each notebook link opens an editable browser version in a new tab.**
+    Change code and rerun cells without a local Python installation. Browser
+    preview edits are not saved back to GitHub automatically; save a copy
+    to keep your changes. To explore the collection locally:
 
     ```sh
     cd marimo-notebooks/correlation_measures
@@ -39,15 +41,15 @@ def _(mo):
 
     | Notebook | Data / question | Range | Main caution |
     | :-- | :-- | :-- | :-- |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/pearsons_r.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Pearson's r</a> | Linear association between numeric variables | -1 to +1 | Can miss nonlinear dependence; sensitive to outliers |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/spearmans_rho.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Spearman's rho</a> | Monotonic association using ranks | -1 to +1 | Can miss non-monotonic dependence; use average ranks for ties |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/kendalls_tau.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Kendall's tau</a> | Agreement in pairwise ordering | -1 to +1 | Tau-b adjusts for ties; its scale differs from Spearman's |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/point_biserial.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Point-biserial correlation</a> | One binary variable and one numeric variable | -1 to +1 | Group coding determines the sign; imbalance affects the value |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/phi_coefficient.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Phi coefficient</a> | Two binary variables | -1 to +1 | Fixed margins can restrict attainable values |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/cramers_v.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Cramer's V</a> | Two categorical variables, without requiring an order | 0 to 1 | No direction; uncorrected sample V is upward biased |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/polychoric_correlation.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Polychoric correlation</a> | Latent normal correlation underlying ordinal categories | -1 to +1 | Depends on the latent normal and threshold model |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/partial_correlation.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Partial correlation</a> | Linear association after adjusting both variables for controls | -1 to +1 | Adjustment is not automatically causal or sufficient |
-    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/distance_correlation.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Distance correlation</a> | General dependence, including non-monotonic relationships | 0 to 1 | Sample estimates can be positive under independence |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/pearsons_r.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Pearson's r</a> | Linear association between numeric variables | -1 to +1 | Can miss nonlinear dependence; sensitive to outliers |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/spearmans_rho.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Spearman's rho</a> | Monotonic association using ranks | -1 to +1 | Can miss non-monotonic dependence; use average ranks for ties |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/kendalls_tau.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Kendall's tau</a> | Agreement in pairwise ordering | -1 to +1 | Tau-b adjusts for ties; its scale differs from Spearman's |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/point_biserial.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Point-biserial correlation</a> | One binary variable and one numeric variable | -1 to +1 | Group coding determines the sign; imbalance affects the value |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/phi_coefficient.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Phi coefficient</a> | Two binary variables | -1 to +1 | Fixed margins can restrict attainable values |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/cramers_v.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Cramer's V</a> | Two categorical variables, without requiring an order | 0 to 1 | No direction; uncorrected sample V is upward biased |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/polychoric_correlation.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Polychoric correlation</a> | Latent normal correlation underlying ordinal categories | -1 to +1 | Depends on the latent normal and threshold model |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/partial_correlation.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Partial correlation</a> | Linear association after adjusting both variables for controls | -1 to +1 | Adjustment is not automatically causal or sufficient |
+    | <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/distance_correlation.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Distance correlation</a> | General dependence, including non-monotonic relationships | 0 to 1 | Sample estimates can be positive under independence |
 
     Ranges describe defined coefficients or the model's parameter space;
     finite samples and fixed margins can limit which values are attainable.

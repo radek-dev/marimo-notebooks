@@ -32,7 +32,7 @@ def _(mo):
 
     The finite-sample value is an estimate, not proof of independence.
     All data is synthetic.
-    <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/summary.py/wasm?mode=read&amp;show-code=false" target="_blank" rel="noopener noreferrer">Back to Correlation Measures Summary</a>
+    <a href="https://molab.marimo.io/github/radek-dev/marimo-notebooks/blob/main/correlation_measures/summary.py/wasm?mode=edit&amp;show-code=true" target="_blank" rel="noopener noreferrer">Back to Correlation Measures Summary</a>
 
     [Back to the Notebook Gallery](https://radek-dev.github.io/notebook-gallery/)
 
