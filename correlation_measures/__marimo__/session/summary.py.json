@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.1",
+    "script_metadata_hash": "da873d5d09e69dbc37de3cbfd95dec06"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "bcbb19d9823cdeb61b99916391e363b8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"correlation-measures-a-learning-guide\">Correlation Measures: a Learning Guide</h1>\n<span class=\"paragraph\">Nine ways to describe association, with interactive synthetic examples,\nformulas, worked calculations, and interpretation pitfalls.</span>\n<span class=\"paragraph\"><strong>To use the local notebook links</strong>, start marimo's directory editor\nfrom this folder, rather than opening this notebook as a standalone app:</span>\n<div class=\"language-sh codehilite\"><pre><span></span><code><span class=\"nb\">cd</span><span class=\"w\"> </span>marimo-notebooks/correlation_measures\nuv<span class=\"w\"> </span>run<span class=\"w\"> </span>marimo<span class=\"w\"> </span>edit\n</code></pre></div>\n<span class=\"paragraph\">Open <code>summary.py</code> in the notebook browser, then follow the links below.\nThey target notebooks on the same local marimo server; they are not\nstandalone links for exported HTML.</span>\n<h2 id=\"choose-a-measure\">Choose a measure</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Notebook</th>\n<th style=\"text-align: left;\">Data / question</th>\n<th style=\"text-align: left;\">Range</th>\n<th style=\"text-align: left;\">Main caution</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=pearsons_r.py\">Pearson's r</a></td>\n<td style=\"text-align: left;\">Linear association between numeric variables</td>\n<td style=\"text-align: left;\">-1 to +1</td>\n<td style=\"text-align: left;\">Can miss nonlinear dependence; sensitive to outliers</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=spearmans_rho.py\">Spearman's rho</a></td>\n<td style=\"text-align: left;\">Monotonic association using ranks</td>\n<td style=\"text-align: left;\">-1 to +1</td>\n<td style=\"text-align: left;\">Can miss non-monotonic dependence; use average ranks for ties</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=kendalls_tau.py\">Kendall's tau</a></td>\n<td style=\"text-align: left;\">Agreement in pairwise ordering</td>\n<td style=\"text-align: left;\">-1 to +1</td>\n<td style=\"text-align: left;\">Tau-b adjusts for ties; its scale differs from Spearman's</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=point_biserial.py\">Point-biserial correlation</a></td>\n<td style=\"text-align: left;\">One binary variable and one numeric variable</td>\n<td style=\"text-align: left;\">-1 to +1</td>\n<td style=\"text-align: left;\">Group coding determines the sign; imbalance affects the value</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=phi_coefficient.py\">Phi coefficient</a></td>\n<td style=\"text-align: left;\">Two binary variables</td>\n<td style=\"text-align: left;\">-1 to +1</td>\n<td style=\"text-align: left;\">Fixed margins can restrict attainable values</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=cramers_v.py\">Cramer's V</a></td>\n<td style=\"text-align: left;\">Two categorical variables, without requiring an order</td>\n<td style=\"text-align: left;\">0 to 1</td>\n<td style=\"text-align: left;\">No direction; uncorrected sample V is upward biased</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=polychoric_correlation.py\">Polychoric correlation</a></td>\n<td style=\"text-align: left;\">Latent normal correlation underlying ordinal categories</td>\n<td style=\"text-align: left;\">-1 to +1</td>\n<td style=\"text-align: left;\">Depends on the latent normal and threshold model</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=partial_correlation.py\">Partial correlation</a></td>\n<td style=\"text-align: left;\">Linear association after adjusting both variables for controls</td>\n<td style=\"text-align: left;\">-1 to +1</td>\n<td style=\"text-align: left;\">Adjustment is not automatically causal or sufficient</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><a href=\"?file=distance_correlation.py\">Distance correlation</a></td>\n<td style=\"text-align: left;\">General dependence, including non-monotonic relationships</td>\n<td style=\"text-align: left;\">0 to 1</td>\n<td style=\"text-align: left;\">Sample estimates can be positive under independence</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\">Ranges describe defined coefficients or the model's parameter space;\nfinite samples and fixed margins can limit which values are attainable.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "82d9445ad34df4b3aeef642c9cf3e39e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"suggested-learning-order\">Suggested learning order</h2>\n<span class=\"paragraph\">Start with <strong>Pearson</strong>, then compare <strong>Spearman</strong> and <strong>Kendall</strong> to see\nwhat ranks preserve and discard. Move to <strong>point-biserial</strong>, <strong>phi</strong>, and\n<strong>Cramer's V</strong> for binary and categorical data. Finally, explore\n<strong>polychoric</strong>, <strong>partial</strong>, and <strong>distance correlation</strong> for latent\nvariables, adjustment, and more general dependence.</span>\n<h2 id=\"connections-to-remember\">Connections to remember</h2>\n<ul>\n<li><strong>Spearman = Pearson on ranks</strong>, with average ranks for tied values.</li>\n<li><strong>Point-biserial = Pearson</strong> with one variable coded 0/1.</li>\n<li><strong>Phi = Pearson</strong> with both variables coded 0/1.</li>\n<li><strong>Cramer's V = absolute phi</strong> for a 2 x 2 table.</li>\n<li><strong>Partial correlation = Pearson on regression residuals</strong>, using the\n  same controls and an intercept in both regressions.</li>\n<li><strong>Polychoric estimates a latent correlation</strong>, not the correlation\n  of arbitrary numeric category codes.</li>\n</ul>\n<h2 id=\"estimation-is-not-the-same-as-description\">Estimation is not the same as description</h2>\n<span class=\"paragraph\">Pearson's sample r is the MLE of population correlation under an\nindependent bivariate-normal model with unknown means and variances,\nfor a nondegenerate sample. Sample partial correlation has a related\nmultivariate-normal MLE interpretation under suitable conditions.</span>\n<span class=\"paragraph\">The polychoric notebook uses <strong>two-step estimation</strong>, not full joint MLE:\nit estimates thresholds first, then optimizes the correlation with those\nthresholds fixed. The other descriptive coefficients should not\nautomatically be called MLEs. Being an MLE does not imply being unbiased.</span>\n<h2 id=\"what-no-single-coefficient-tells-you\">What no single coefficient tells you</h2>\n<span class=\"paragraph\"><strong>Association is not causation.</strong> Inspect plots or contingency tables,\nconsider sample size and uncertainty, and check the assumptions of any\ninferential procedure.</span>\n<span class=\"paragraph\">Zero Pearson, Spearman, or Kendall correlation need not mean independence.\nPopulation distance correlation is zero exactly under independence for\nEuclidean random vectors with finite first moments, but a finite-sample\nestimate alone cannot establish that conclusion.</span>\n<span class=\"paragraph\"><strong>Practice:</strong> for each notebook, explain what is measured, calculate the\nworked example, change the controls, and identify a situation in which\nthe coefficient could mislead.</span>\n<span class=\"paragraph\"><a href=\"https://radek-dev.github.io/notebook-gallery/\" rel=\"noopener noreferrer\" target=\"_blank\">Back to the Notebook Gallery</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
